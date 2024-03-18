@@ -1,4 +1,3 @@
-# Bárbara Anger Page
 ## Introduction
 Started as a 8-year-old girl who wanted to create a blog, because of that, I learned frontend development when HTML4 was still in use. After I started college, I was able to get more opportunities of development, in 2018 I started on my first internship on development, applying everything I learned over the years.
 
