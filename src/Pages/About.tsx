@@ -1,13 +1,13 @@
-// About.jsx
+import { Stack } from '@mui/material';
 import React from 'react';
 
-const About = () => {
+const AboutPage: React.FC = () => {
   return (
-    <section id="about">
+    <Stack>
       <h2>About Me</h2>
       <p>Write about yourself here...</p>
-    </section>
+    </Stack>
   );
 };
 
-export default About;
+export default AboutPage;

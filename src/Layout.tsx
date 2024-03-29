@@ -1,17 +1,24 @@
-import Header from "./Components/Header";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Projects from "./Pages/Projects";
+import React, { ReactNode } from 'react';
+import { Container, AppBar, Toolbar, Typography, Button } from '@mui/material';
 
-const Layout = () => {
-    return (
-        <main>
-            <Header />
-            <About />
-            <Projects />
-            <Contact />
-        </main>
-    );
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Bárbara Anger
+          </Typography>
+          <Button color="inherit">About</Button>
+          <Button color="inherit">Projects</Button>
+          <Button color="inherit">Contact</Button>
+        </Toolbar>
+      </AppBar>
+      <Container sx={{ mt: 4 }}>{children}</Container>
+    </div>
+  );
 };
-
-export default Layout;

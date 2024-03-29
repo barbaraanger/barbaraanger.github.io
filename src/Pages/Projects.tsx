@@ -1,15 +1,15 @@
-// Projects.jsx
+// ProjectsPage.tsx
+import { Stack } from '@mui/system';
 import React from 'react';
 
-const Projects = () => {
+const ProjectsPage: React.FC = () => {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <div className="project-list">
+    <Stack>
+      <h2>Projects</h2><div className="project-list">
         {/* Display your projects here */}
       </div>
-    </section>
+    </Stack>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
