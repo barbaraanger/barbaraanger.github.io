@@ -1,16 +1,20 @@
-import { Layout } from "./Layout";
-import AboutPage from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Projects from "./Pages/Projects";
+import { ThemeProvider } from "@mui/material/styles";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import "./assets/fonts/fonts.css";
+import theme from "./theme";
 
-function App() {
+const App = () => {
   return (
-    <Layout>
-      <AboutPage />
-      <Contact />
-      <Projects />
-    </Layout>
+    <>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Routes>
+            <Route path="/" Component={Home} />
+          </Routes>
+        </Router>
+      </ThemeProvider>
+    </>
   );
-}
-
+};
 export default App;
