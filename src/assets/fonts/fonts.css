@@ -1,0 +1,22 @@
+/* assets/fonts/fonts.css */
+@font-face {
+  font-family: 'Special Elite';
+  src: url('./SpecialElite-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./Playfair/PlayfairDisplay-VariableFont_wght.ttf') format()
+}
+
+@font-face {
+  font-family: 'Abril Fatface Regular';
+  src: url('./AbrilFatface-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Tenor Sans Regular';
+  src: url('./TenorSans-Regular.ttf') format('truetype'); /* Adjust the path and file format accordingly */
+  font-weight: normal;
+  font-style: normal;
+}
