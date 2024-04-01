@@ -10,17 +10,16 @@ declare module '@mui/material/styles' {
   interface ThemeOptions {
     nameTitle: {
       color: string,
-      fontSize: string
+      fontSize: string,
+      fontFamily: string
     };
   }
 }
 
 const theme = createTheme({
-    typography: {
-      fontFamily: "Special Elite",
-    },
     nameTitle: {
         color: '#fff',
+        fontFamily: "Special Elite",
         fontSize: '34px'
     },
     palette: {
@@ -30,6 +29,12 @@ const theme = createTheme({
       secondary: {
         main: "#dc004e",
       },
+      text: {
+        primary: '#fff'
+      },
+      background: {
+        default: '#13072E'
+      }
     },
 });
 

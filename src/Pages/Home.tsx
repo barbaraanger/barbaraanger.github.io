@@ -1,14 +1,11 @@
 import { Grid } from "@mui/material";
-import { NameTyping } from "../Components";
-import { WhoAmISVG } from "../assets/WhoAmISVG";
-import { BackgroundSVG } from "../assets/Background/BackgroundSVG"; // Importe o SVG de fundo
-import BurstEffectSVG from "../assets/BurstEffectSVG";
-import { ArrowDownSVG } from "../assets/ArrowDownSVG";
+import { NameTyping, NextPageArrow } from "../Components";
+import { BackgroundSVG, WhoAmISVG, BurstEffectSVG } from "../assets";
 
 export const Home = () => {
   return (
     <>
-      <BackgroundSVG /> {/* Renderize o SVG de fundo */}
+      <BackgroundSVG />
       <Grid container spacing={2} padding={5}>
         <Grid item xs={12} md={6} lg={3}>
           <NameTyping />
@@ -21,7 +18,7 @@ export const Home = () => {
         </Grid>
       </Grid>
       <BurstEffectSVG />
-      <ArrowDownSVG width={"10"} height={"10"} />
+      <NextPageArrow nextPageUrl={"/about"} />
     </>
   );
 };

@@ -1,6 +1,5 @@
-import { Typography, styled, useTheme } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import { ReactTyped } from "react-typed";
-import background from "../assets/background.svg";
 
 const NameTyping: React.FC = () => {
   const theme = useTheme();

@@ -1,3 +1,3 @@
-export * from './Header'
 export * from './NameTypying'
-export * from './Navbar'
+export * from './NextPageArrow'
+export * from './NotFound'

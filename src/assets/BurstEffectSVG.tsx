@@ -14,7 +14,7 @@ const AnimatedText = styled.text`
   fill: #fff;
 `;
 
-const BurstEffectSVG = () => {
+export const BurstEffectSVG = () => {
   const [text, setText] = useState("");
   const [visibleLetters, setVisibleLetters] = useState(0);
 
@@ -46,5 +46,3 @@ const BurstEffectSVG = () => {
     </StyledSVG>
   );
 };
-
-export default BurstEffectSVG;
