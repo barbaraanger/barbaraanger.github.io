@@ -14,7 +14,6 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" Component={Home} />
-            <Route path="/about" Component={About} />
             <Route path="*" Component={NotFound} />
           </Routes>
         </Router>
