@@ -40,7 +40,7 @@ export const BurstEffectSVG = () => {
 
   return (
     <StyledSVG>
-      <AnimatedText x="50%" y="70%">
+      <AnimatedText x="50%" y="90%">
         {text}
       </AnimatedText>
     </StyledSVG>

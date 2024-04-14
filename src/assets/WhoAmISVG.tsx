@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import "./assets.css";
 
 const StyledSVG = styled.svg`
   width: 500px;
