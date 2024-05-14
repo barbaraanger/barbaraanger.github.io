@@ -1,24 +1,32 @@
 import { Grid } from "@mui/material";
-import { NameTyping, NextPageArrow } from "../Components";
-import { BackgroundSVG, WhoAmISVG, BurstEffectSVG } from "../assets";
+import { NameTyping } from "../Components";
+import {
+  BackgroundSVG,
+  WhoAmISVG,
+  BurstEffectSVG,
+  ArrowDownSVG,
+} from "../assets";
+import { About } from "./About/About";
 
 export const Home = () => {
   return (
-    <>
+    <Grid container spacing={3} padding={5}>
       <BackgroundSVG />
-      <Grid container spacing={2} padding={5}>
-        <Grid item xs={12} md={6} lg={3}>
-          <NameTyping />
-        </Grid>
+      <Grid item>
+        <NameTyping />
       </Grid>
-      <Grid container xs={12} md={12} lg={3} padding={5}>
-        <Grid item xs={7} md={6} lg={8}></Grid>
-        <Grid item xs={5} md={4} lg={3}>
-          <WhoAmISVG />
-        </Grid>
+      <Grid item xs={6}>
+        <WhoAmISVG />
       </Grid>
-      <BurstEffectSVG />
-      <NextPageArrow nextPageUrl={"/about"} />
-    </>
+      <Grid item xs={12}>
+        <BurstEffectSVG />
+      </Grid>
+      <Grid item xs={12}>
+        <ArrowDownSVG width={"10px"} height={"20px"} />
+      </Grid>
+      <Grid item xs={12}>
+        <About />
+      </Grid>
+    </Grid>
   );
 };

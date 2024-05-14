@@ -14,7 +14,7 @@ export const ArrowDownSVG: React.FC<Props> = ({ width, height }) => {
       text-rendering="geometricPrecision"
     >
       <image
-        x={"42%"}
+        x={"45%"}
         y={"30%"}
         width={width}
         height={height}
